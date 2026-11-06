@@ -1,17 +1,28 @@
 [project]
 name = "openresume"
 version = "0.1.0"
-description = "Add your description here"
+description = "Local-first resume document tools"
 readme = "README.md"
 authors = [
     { name = "Amin", email = "37046559+aminkan@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "python-docx>=1.2",
+    "PyMuPDF>=1.26",
+    "ipykernel>=7.4.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4"]
 
 [project.scripts]
 openresume = "openresume:main"
 
 [build-system]
-requires = ["uv_build>=0.13.6,<0.14.0"]
-build-backend = "uv_build"
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["plugins/openresume/scripts"]
+include = ["openresume"]

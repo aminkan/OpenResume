@@ -1,0 +1,19 @@
+{
+  "name": "openresume",
+  "version": "0.4.0",
+  "description": "Review and apply targeted edits to local PDF and DOCX resumes.",
+  "author": {"name": "Amin", "url": "https://github.com/aminkan"},
+  "repository": "https://github.com/aminkan/OpenResume",
+  "skills": "./skills/",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "OpenResume",
+    "shortDescription": "Tailor a local resume",
+    "longDescription": "Review proposed resume edits and generate a separate PDF or DOCX copy after approval.",
+    "developerName": "Amin",
+    "category": "Productivity",
+    "logo": "./assets/openresume.png",
+    "composerIcon": "./assets/openresume.png",
+    "defaultPrompt": ["Tailor my resume for this job and show me the proposed edits first."]
+  }
+}

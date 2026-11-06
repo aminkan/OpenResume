@@ -1,0 +1,20 @@
+{
+  "name": "openresume-local",
+  "interface": {
+    "displayName": "OpenResume Local"
+  },
+  "plugins": [
+    {
+      "name": "openresume",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openresume"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
